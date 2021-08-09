@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title for Webpage -->
+	<title>A Survey Form</title>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- Bootstrap Stylesheet -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+	<!-- External StyleSheets -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+	<!-- Begin - HEADER Part -->
+	<header class="header" id="header">
+		<h1 id="title">Student Stress Survey</h1>
+		<p id="description">School, financial, family, and academic stress are all serious issues today - even for kids. Send our streamlined School Stress Survey to your students to assess their overall stress levels and the types of stresses they are facing on a regular basis.</p>
+	</header>
+	<!-- End - HEADER Part -->
+
+	<!-- Begin - MAIN Part -->
+	<main>
+		<form id="survey-form">
+			<div class="form-group">
+				<div>
+					<label for="name" id="name-label" class="label-title">Name :</label>
+				</div>
+				<input type="text" name="name" placeholder="Enter your name" id="name" required>
+			</div>
+			<div class="form-group">
+				<div>
+					<label for="email" id="email-label" class="label-title">Email :</label>
+				</div>
+				<input type="email" name="email" placeholder="Enter your email" id="email" required>
+			</div>
+			<div class="form-group">
+				<div>
+					<label for="number" id="number-label" class="label-title">Age <span class="hint">(Optional)</span> :</label>
+				</div>
+				<input type="number" name="mobile" placeholder="Enter your age" min="10" max="99" id="number">
+			</div>
+			<div class="form-group">
+				<div>
+					<label for="dropdown" class="label-title">Grade :</label>
+				</div>
+				<select name="grade" id="dropdown" required>
+					<option value="" disabled selected>Select an option</option>
+					<option value="freshman">Freshman</option>
+					<option value="sophomore">Sophomore</option>
+					<option value="junior">Junior</option>
+					<option value="senior">Senior</option>
+					<option value="postGraduate">Post-Graduate</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<div>
+					<label for="radio-sleep-hour1" class="label-title">1. How many hours of sleep do you usually get on a school night?</label>
+				</div>
+				<div class="radio-field-holder">
+					<input type="radio" name="sleepHours" value="Less than 7 hours" id="radio-sleep-hour1">
+					<label for="radio-sleep-hour1">Less than 7 hours</label>
+				</div>
+				<div class="radio-field-holder">
+					<input type="radio" name="sleepHours" value="7-8 hours" id="radio-sleep-hour2">
+					<label for="radio-sleep-hour2">7-8 hours</label>
+				</div>
+				<div class="radio-field-holder">
+					<input type="radio" name="sleepHours" value="8-9 hours" id="radio-sleep-hour3">
+					<label for="radio-sleep-hour3">8-9 hours</label>
+				</div>
+				<div class="radio-field-holder">
+					<input type="radio" name="sleepHours" value="More than 9 hours" id="radio-sleep-hour4">
+					<label for="radio-sleep-hour4">More than 9 hours</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div>
+					<label for="checkbox-cause-stress1" class="label-title">2. Which of the following causes most stress? <span class="hint">(Check all that apply)</span></label>
+				</div>
+				<div class="checkbox-flex">
+					<div class="checkbox-flex-item">
+						<div class="checkbox-field-holder">
+							<input type="checkbox" name="causeStress" value="Student issues" id="checkbox-cause-stress1">
+							<label for="checkbox-cause-stress1">Student issues</label>
+						</div>
+						<div class="checkbox-field-holder">
+							<input type="checkbox" name="causeStress" value="Family issues" id="checkbox-cause-stress2">
+							<label for="checkbox-cause-stress2">Family issues</label>
+						</div>
+						<div class="checkbox-field-holder">
+							<input type="checkbox" name="causeStress" value="Romantic relationship issues" id="checkbox-cause-stress3">
+							<label for="checkbox-cause-stress3">Romantic relationship issues</label>
+						</div>
+						<div class="checkbox-field-holder">
+							<input type="checkbox" name="causeStress" value="Sport/athletic activities" id="checkbox-cause-stress4">
+							<label for="checkbox-cause-stress4">Sport/athletic activities</label>
+						</div>
+					</div>
+					<div class="checkbox-flex-item">
+						<div class="checkbox-field-holder">
+							<input type="checkbox" name="causeStress" value="Financial issues" id="checkbox-cause-stress5">
+							<label for="checkbox-cause-stress5">Financial issues</label>
+						</div>
+						<div class="checkbox-field-holder">
+							<input type="checkbox" name="causeStress" value="Friends issues" id="checkbox-cause-stress6">
+							<label for="checkbox-cause-stress6">Friends issues</label>
+						</div>
+						<div class="checkbox-field-holder">
+							<input type="checkbox" name="causeStress" value="Health related issues" id="checkbox-cause-stress7">
+							<label for="checkbox-cause-stress7">Health related issues</label>
+						</div>
+						<div class="checkbox-field-holder">
+							<input type="checkbox" name="causeStress" value="Other" id="checkbox-cause-stress8">
+							<label for="checkbox-cause-stress8">Other</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div>
+					<label for="additional-comments" class="label-title">3. What do you think that the school authorities can do to decrease the stress level?</label>
+				</div>
+				<textarea name="additionalComments" id="additional-comments" placeholder="Enter your comment here..." rows="5"></textarea>
+			</div>
+			<div class="form-group">
+				<button type="submit" value="Submit" id="submit">Submit</button>
+			</div>
+		</form>
+	</main>
+	<!-- End - MAIN Part -->
+
+	<!-- Begin - FOOTER Part -->
+	<footer class="footer" id="footer">
+		<div class="bg-dark my-footer pt-3">
+			<span class="footer-social-title">Follow Me at { @hardikmaks17 }</span>
+			<hr>
+			<ul class="footer-social-ul">
+				<li class="footer-social-item"><a href="https://linkedin.com/in/hardikmaks17" target="_blank"><i class="fab fa-linkedin footer-icon"></i></a></li>
+				<li class="footer-social-item"><a href="https://facebook.com/hardikmaks17" target="_blank"><i class="fab fa-facebook footer-icon"></i></a></li>
+				<li class="footer-social-item"><a href="https://github.com/hardikmaks17" target="_blank"><i class="fab fa-github footer-icon"></i></a></li>
+				<li class="footer-social-item"><a href="https://dribbble.com/hardikmaks17" target="_blank"><i class="fab fa-dribbble footer-icon"></i></a></li>
+				<li class="footer-social-item"><a href="https://instagram.com/hardikmaks17" target="_blank"><i class="fab fa-instagram footer-icon"></i></a></li>
+				<li class="footer-social-item"><a href="https://twitter.com/hardikmaks17" target="_blank"><i class="fab fa-twitter footer-icon"></i></a></li>
+				<li class="footer-social-item"><a href="https://www.quora.com/profile/Hardik-Makwana-80" target="_blank"><i class="fab fa-quora footer-icon"></i></a></li>
+				<li class="footer-social-item"><a href="https://wa.me/+918999903113" target="_blank"><i class="fab fa-whatsapp footer-icon"></i></a></li>
+				<li class="footer-social-item"><a href="https://www.freecodecamp.org/hardikmaks17" target="_blank"><i class="fab fa-free-code-camp footer-icon"></i></a></li>
+			</ul>
+			<hr>
+			<p class="my-copyright">Made with <i class="fas fa-heart" style="color: red;"></i> by <a class="my-social-username" href="https://instagram.com/hardikmaks17" target="_blank">&#64;hardikmaks17</a></p>
+		</div>
+	</footer>
+	<!-- End - FOOTER Part -->
+
+</body>
+</html>

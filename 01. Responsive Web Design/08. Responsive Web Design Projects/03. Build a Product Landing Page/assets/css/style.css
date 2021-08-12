@@ -1,0 +1,289 @@
+/* Begin: Header Part */
+
+    header {
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+        background-color: #212529;
+    }
+
+    .navbar-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .company-logo {
+        width: 80%;
+        max-width: 200px;
+        color: red;
+        background-color: #ddd;
+    }
+
+    .nav-ul {
+        margin: 0; padding: 0;
+    }
+
+    .nav-item {
+        display: inline-block;
+    }
+
+    .nav-link {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav-link:hover {
+        color: hotpink;
+    }
+
+    @media screen and (max-width: 664px) {
+        .navbar-flex {
+            flex-direction: column;
+        }
+
+        .nav-link {
+            padding-right: 0.5rem !important;
+            padding-left: 0.5rem !important;
+        }
+    }
+
+/* Begin: Header Part */
+
+/* Begin: Main Part */
+    
+    .navigation-holder {
+        position:fixed;
+        right: 2%;
+        bottom: 2%;
+        font-size: 2em;
+    }
+    
+    .navigation-holder:hover {
+        transform:translateY(-10px);
+        transition: ease 0.5s;
+    }
+    
+    .navigation-holder a {
+        color: #f00;
+    }
+
+    .section-header {
+        background-color: lightyellow;
+    }
+
+    .section-title, .section-about {
+        text-align: center;
+    }
+
+    /* Begin: Features-Section Part */
+        .feature-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 85vw;
+            max-width: 1100px;
+            min-height: 120px;
+            margin: 2em auto;
+            border: 1px dashed #000;
+            box-shadow: 0 0 5px 1px #ddd;
+        }
+
+        .feature-icon-holder {
+            width: 20%;
+            font-size: 3.5rem;
+            text-align: center;
+        }
+        
+        .feature-body {
+            width: 80%;
+        }
+
+        .feature-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        @media screen and (max-width: 720px) {
+            .feature-card {
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 1.5em;
+            }
+        }
+    /* End: Features-Section Part */
+
+    /* Begin: Tutorial-Section Part */
+        .tutorial-video-holder {
+            display: flex;
+            justify-content: center;
+            padding: 2em;
+        }
+        
+        .tutorial-video-holder iframe {
+            width: 700px;
+            height: 400px;
+            padding: 1em;
+            border: 10px groove goldenrod;
+            border-radius: 2.5px;
+        }
+
+        @media screen and (max-width: 770px) {
+            .tutorial-video-holder iframe {
+                width: 100%;
+                height: 400px;
+                min-height: 200px;
+            }
+        }
+    /* End: Tutorial-Section Part */
+
+    /* Begin: Pricing-Section Part */
+        .pricing-card-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 2em 0;
+        }
+        
+        .pricing-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 2em;
+            margin: 0 2em;
+            width: 250px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px 0 #bbb;
+        }
+
+        .pricing-card:hover {
+            transform:translateY(20px);
+            transition: ease 0.5s;
+        }
+        
+        .pricing-head {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .pricing-title {
+            display: block;
+            border-radius: 5px 5px 0 0;
+            background-color: gold;
+            padding: 0.1em 0;
+        }
+
+        .pricing-price-holder {
+            margin-top: 1em;
+        }
+
+        .pricing-plan-price {
+            font-size: 2rem;;
+        }
+        
+        .pricing-body {
+            margin: 0 auto;
+        }
+        
+        .pricing-discription {
+            text-align: left;
+        }
+        
+        .buynow-button {
+            width: 80%;
+            font-weight: 700;
+            padding: 0.3em 0;
+            border: 2.5px solid #000;
+            color: #000;
+            border-radius: 17.5px;
+            background-color: gold;
+        }
+
+        @media screen and (max-width: 900px) {
+            .pricing-card-container {
+                flex-wrap: wrap;
+            }
+            
+            .pricing-card {
+                margin: 1em;
+            }
+        }
+    /* End: Pricing-Section Part */
+
+    /* Begin: Subscribe-Section Part */
+
+        .subscribe-section {
+            padding-bottom: 2em;
+        }
+
+        .form-group {
+            text-align: center;
+            margin: 1em 0;
+        }
+
+        .input-email {
+            width: 25%;
+            min-width: 300px;
+            padding: 0.1em 1em;
+        }
+
+        .submit-btn {
+            color: #000;
+            width: 150px;
+            font-weight: 700;
+            border: 2.5px solid #000;
+            background-color: gold;
+        }
+    /* End: Subscribe-Section Part */
+
+/* End: Main Part */
+
+/* Begin: Footer Part */
+
+    footer {
+        padding: 0 1em;
+    }
+
+    footer a {
+        color: #fff;
+        display: inline-block;
+    }
+
+    .footer-social-ul {
+        padding: 0;
+    }
+
+    .footer-social-item {
+        display: inline-block;
+        list-style: none;
+        margin: 0 15px;
+    }
+
+    .footer-social-title {
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+
+    .footer-icon {
+        font-size: 1.75em;
+        color: #ddd;
+        margin: 10px 0;
+    }
+
+    .my-copyright {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 1em;
+    }
+    .my-footer, .my-social-username {
+        text-align: center;
+        color: #fff;
+        font-size: 1em;
+    }
+
+    .my-social-username:hover {
+        color: hotpink;
+    }
+    
+/* End: Footer Part */

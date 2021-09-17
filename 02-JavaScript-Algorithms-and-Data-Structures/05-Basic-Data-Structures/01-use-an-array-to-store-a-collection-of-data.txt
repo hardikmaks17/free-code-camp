@@ -1,0 +1,1 @@
+let yourArray = ["string", 17, true, null, undefined]; // Change this line

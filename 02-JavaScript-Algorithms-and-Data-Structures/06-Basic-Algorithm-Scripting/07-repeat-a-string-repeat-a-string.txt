@@ -1,0 +1,18 @@
+function repeatStringNumTimes(str, num) {
+  // Method-1: Using Recursion
+  // if(num <= 0) {
+  //   return str = "";
+  // }
+  // else {
+  //   return str + repeatStringNumTimes(str, num - 1);
+  // }
+
+  // Method-2: Using simple for loop
+  let result = "";
+  for(let i = 0; i < num; i++) {
+    result = result + str;
+  }
+  return result;
+}
+
+repeatStringNumTimes("abc", 3);

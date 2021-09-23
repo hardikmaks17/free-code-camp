@@ -1,0 +1,16 @@
+function booWho(bool) {
+
+  // Method-1: Use of comparizon
+  // if(bool === true || bool === false) {
+  //   return true;
+  // }
+  // else {
+  //   return false;
+  // }
+
+  // Method-2: Using "typeof"
+  return typeof bool === "boolean";
+
+}
+
+booWho(null);

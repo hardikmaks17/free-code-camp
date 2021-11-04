@@ -1,0 +1,30 @@
+function Animal() { }
+
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+
+function Dog(name) {this.name = name;}
+
+// Only change code below this line
+Dog.prototype = Object.create(Animal.prototype);
+
+let beagle = new Dog();
+
+// EXTRA: for understanding purpose
+let allProp = [], ownProp = [], prototypeProp = [];
+for(let property in beagle) {
+  allProp.push(property);
+  if(beagle.hasOwnProperty(property)) {
+    ownProp.push(property);
+  }
+  else {
+    prototypeProp.push(property);
+  }
+}
+console.log("AllProp:", allProp);
+console.log("OwnProp:", ownProp);
+console.log("PrototypeProp:", prototypeProp);

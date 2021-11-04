@@ -1,0 +1,27 @@
+function Animal() { }
+Animal.prototype.eat = function() { console.log("nom nom nom"); };
+
+function Dog() { }
+
+// Only change code below this line
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+Dog.prototype.bark = function() { console.log("Woof!"); }
+// Only change code above this line
+
+let beagle = new Dog();
+
+// EXTRA: for understanding purpose
+let allProp = [], ownProp = [], prototypeProp = [];
+for(let property in beagle) {
+  allProp.push(property);
+  if(beagle.hasOwnProperty(property)) {
+    ownProp.push(property);
+  }
+  else {
+    prototypeProp.push(property);
+  }
+}
+console.log("AllProp:", allProp);
+console.log("OwnProp:", ownProp);
+console.log("PrototypeProp:", prototypeProp);

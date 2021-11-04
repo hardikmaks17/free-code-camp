@@ -1,0 +1,20 @@
+function Dog(name) {
+  this.name = name;
+}
+
+// Only change code below this line
+Dog.prototype = {
+  constructor: Dog, // comment this line to see the difference
+  numLegs: 4,
+  eat: function() {
+    console.log("nom nom nom");
+  },
+  describe: function() {
+    console.log("My name is " + this.name);
+  }
+};
+
+let tommy = new Dog("Tommy");
+console.log("Dog :", tommy.constructor === Dog);
+console.log("Object:", tommy.constructor === Object);
+console.log("instanceof:", tommy instanceof Dog);

@@ -1,0 +1,11 @@
+function Bird() {
+  let weight = 15;
+
+  this.getWeight = function() {
+    return weight;
+  };
+}
+
+// EXTRA: for understanding purpose
+let crow = new Bird();
+console.log(crow.getWeight());
